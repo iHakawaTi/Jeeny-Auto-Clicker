@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jeeny Auto-Clicker</string>
+    <string name="accessibility_service_description">Jeeny Auto-Clicker auto-accepts Jeeny driver orders matching the configured minimum fare (JDs) and maximum pickup time.</string>
+</resources>

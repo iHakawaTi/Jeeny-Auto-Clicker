@@ -1,0 +1,224 @@
+{
+    "@@locale": "en",
+
+    "appName": "Jeeny Auto-Clicker",
+    "appTagline": "Jeeny Auto-Clicker",
+
+    "signIn": "Sign In",
+    "signInSubtitle": "Sign in to access your auto-accept driver panel",
+    "signOut": "Sign Out",
+    "register": "Register",
+    "registerNow": "Register Now",
+    "createAccount": "Create Account",
+    "createDriverAccount": "Create Driver Account",
+    "registerSubtitle": "Register your profile to set up auto-accept criteria",
+    "dontHaveAccount": "Don't have an account? ",
+
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number (e.g. 079XXXXXXX)",
+    "emailAddress": "Email Address",
+    "driverEmail": "Driver Email",
+    "password": "Password",
+
+    "trialActive": "Trial Active",
+    "trialActiveBody": "Your 48-hour trial is running. Enjoy full auto-accept.",
+    "trialTimeLeft": "{hours}h {minutes}m left on trial",
+    "@trialTimeLeft": {
+        "placeholders": {
+            "hours": {"type": "int"},
+            "minutes": {"type": "int"}
+        }
+    },
+    "subscriptionActiveDaysLeft": "{days} days left on subscription",
+    "@subscriptionActiveDaysLeft": {
+        "placeholders": {
+            "days": {"type": "int"}
+        }
+    },
+
+    "trialExpiredTitle": "Trial Expired",
+    "trialExpiredBody": "Your 48-hour free trial has ended. Contact the admin to activate a monthly subscription.",
+    "subscriptionInactiveTitle": "Subscription Inactive",
+    "subscriptionInactiveBody": "Your account is registered but requires an active monthly subscription approved by the administrator.",
+    "subscriptionExpiredTitle": "Subscription Expired",
+    "subscriptionExpiredBody": "Your monthly subscription has ended. Contact the admin to renew.",
+
+    "accountStatus": "Account Status:",
+    "autoAcceptService": "Auto-Accept Service:",
+    "statusInactive": "INACTIVE",
+    "statusExpired": "EXPIRED",
+    "statusLocked": "LOCKED",
+    "refreshStatus": "Refresh Subscription Status",
+    "checking": "Checking...",
+    "messageAdminWhatsApp": "Message Admin on WhatsApp",
+    "adminWhatsAppUnavailable": "Admin has not set a WhatsApp number yet. Please contact them another way.",
+    "adminMessageTemplate": "Hi, this is {name} ({email}, {phone}). I would like to activate my Jeeny Auto-Clicker subscription.",
+    "@adminMessageTemplate": {
+        "placeholders": {
+            "name": {"type": "String"},
+            "email": {"type": "String"},
+            "phone": {"type": "String"}
+        }
+    },
+    "subscriptionStillInactive": "Subscription still inactive. Please contact Admin.",
+
+    "autoAcceptActive": "AUTO-ACCEPT ACTIVE",
+    "autoAcceptOff": "AUTO-ACCEPT OFF",
+    "scanningJeeny": "Scanning Jeeny screen for qualifying orders...",
+    "turnOnSwitch": "Turn on switch to start auto-accepting orders",
+    "autoAcceptCriteria": "Auto-Accept Criteria",
+    "minimumTripPrice": "Minimum Trip Price:",
+    "maxPickupEta": "Max Pickup ETA / Distance:",
+    "farePlusSuffix": "{fare} JDs +",
+    "@farePlusSuffix": {
+        "placeholders": {
+            "fare": {"type": "String"}
+        }
+    },
+    "pickupUnderMins": "≤ {mins} mins",
+    "@pickupUnderMins": {
+        "placeholders": {
+            "mins": {"type": "int"}
+        }
+    },
+    "acceptedOrderPrefix": "Accepted Order: {fare}",
+    "@acceptedOrderPrefix": {
+        "placeholders": {
+            "fare": {"type": "String"}
+        }
+    },
+    "pickupEtaLabel": "Pickup ETA: {time}",
+    "@pickupEtaLabel": {
+        "placeholders": {
+            "time": {"type": "String"}
+        }
+    },
+
+    "systemReady": "System Ready & Operational",
+    "systemReadyBody": "Accessibility Service is listening for Jeeny orders",
+    "actionRequired": "Action Required",
+    "actionRequiredBody": "Some permissions or subscription checks are missing",
+    "grantMissingPermissions": "GRANT MISSING PERMISSIONS",
+    "subActive": "Sub Active",
+    "accessibility": "Accessibility",
+    "overlay": "Overlay",
+    "batteryOpt": "Battery",
+    "autoStartLabel": "Auto-Start",
+
+    "recentActivity": "Recent Activity & Accepted Orders",
+    "noOrdersYet": "No orders accepted yet",
+    "turnOnMasterAndOpenJeeny": "Turn on master switch & open Jeeny app",
+
+    "requiredPermissions": "Required Permissions",
+    "permissionsIntro": "To read Jeeny order requests and auto-accept them, Android requires system permissions:",
+    "accessibilityTitle": "1. Accessibility Service",
+    "accessibilityBody": "Allows the app to read Jeeny screen order prices & pickup times and click Accept.",
+    "overlayTitle": "2. Overlay / System Alert Window",
+    "overlayBody": "Allows the app to operate continuously over the Jeeny driver application.",
+    "batteryOptTitle": "3. Battery Optimization Exemption",
+    "batteryOptBody": "Prevents Android from silently killing the auto-accept service after a while.",
+    "autoStartTitle": "4. Auto-Start (Xiaomi / Huawei / OPPO / Vivo)",
+    "autoStartBody": "Some phones need an extra toggle so the service can start after reboot. Skip if not applicable.",
+    "granted": "GRANTED",
+    "actionNeeded": "ACTION NEEDED",
+    "notApplicable": "N/A",
+    "openSystemSettings": "OPEN SYSTEM SETTINGS",
+    "continueToDashboard": "CONTINUE TO DASHBOARD",
+    "grantAllToProceed": "GRANT ALL PERMISSIONS TO PROCEED",
+
+    "accessibilityGuideTitle": "How to enable on your {manufacturer}",
+    "@accessibilityGuideTitle": {
+        "placeholders": {
+            "manufacturer": {"type": "String"}
+        }
+    },
+    "accessibilityGuideGenericStep1": "Find «Installed apps» or «Downloaded services» in Accessibility.",
+    "accessibilityGuideGenericStep2": "Tap «Keemo Auto-Accept Engine».",
+    "accessibilityGuideGenericStep3": "Turn the switch ON and confirm.",
+    "accessibilityGuideSamsungStep1": "Open Installed apps in Accessibility.",
+    "accessibilityGuideSamsungStep2": "Tap «Keemo Auto-Accept Engine».",
+    "accessibilityGuideSamsungStep3": "Toggle it ON, then tap Allow.",
+    "accessibilityGuideXiaomiStep1": "Scroll to Downloaded services.",
+    "accessibilityGuideXiaomiStep2": "Tap Keemo, enable it and confirm the warning.",
+    "accessibilityGuideXiaomiStep3": "Return to Keemo — you should see «Granted».",
+    "gotIt": "GOT IT",
+
+    "accountDetails": "Account Details",
+    "orderHistory": "Order History",
+    "appVersionLabel": "App Version",
+    "language": "Language",
+    "languageEnglish": "English",
+    "languageArabic": "العربية",
+
+    "trialLabel": "Trial",
+    "activeLabel": "Active",
+    "expiredLabel": "Expired",
+    "inactiveLabel": "Inactive",
+
+    "adminDashboard": "Admin Dashboard",
+    "tabDrivers": "Drivers",
+    "tabOverview": "Overview",
+    "tabSettings": "Settings",
+    "searchDrivers": "Search drivers…",
+    "activateOneMonth": "Activate 1 Month",
+    "extend": "Extend",
+    "extendDays": "Extend by days",
+    "deactivate": "Deactivate",
+    "resetDevice": "Reset Device",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "totalDrivers": "Total Drivers",
+    "trialDrivers": "On Trial",
+    "activeDrivers": "Active",
+    "expiredDrivers": "Expired",
+    "activationsThisMonth": "Activations this month",
+    "adminWhatsappNumber": "Admin WhatsApp Number",
+    "adminDisplayName": "Admin Display Name",
+    "save": "Save",
+    "saved": "Saved",
+    "confirmActivate": "Activate {name} for 1 month?",
+    "@confirmActivate": {
+        "placeholders": {
+            "name": {"type": "String"}
+        }
+    },
+    "confirmDeactivate": "Deactivate {name}? They will lose access immediately.",
+    "@confirmDeactivate": {
+        "placeholders": {
+            "name": {"type": "String"}
+        }
+    },
+    "confirmResetDevice": "Reset device binding for {name}? They will be able to log in from a new phone.",
+    "@confirmResetDevice": {
+        "placeholders": {
+            "name": {"type": "String"}
+        }
+    },
+    "noDriversYet": "No drivers registered yet.",
+
+    "errorDeviceAlreadyRegistered": "This device is already registered to another account. Contact admin.",
+    "errorLockedToDifferentDevice": "Account locked to another Android device ({model}). Contact Admin to reset your device binding.",
+    "@errorLockedToDifferentDevice": {
+        "placeholders": {
+            "model": {"type": "String"}
+        }
+    },
+    "errorGeneric": "Something went wrong. Please try again.",
+    "unknown": "—",
+
+    "floatingBubble": "Floating Toggle Button",
+    "floatingBubbleBody": "Show a draggable green/red bubble over other apps. Tap it to turn auto-accept on/off without opening Keemo.",
+    "floatingBubbleNeedsOverlay": "Grant the Overlay permission first so the bubble can appear over Jeeny.",
+
+    "deviceMismatchTitle": "This device is not your registered device",
+    "deviceMismatchBody": "Your account is locked to a different Android device. Ask the admin to reset your device binding, then try again.",
+
+    "switchToDriverView": "Driver View",
+    "switchToAdminView": "Admin Dashboard",
+    "forgotPassword": "Forgot Password?",
+    "forgotPasswordTitle": "Reset Password",
+    "forgotPasswordBody": "Enter your account email. We'll send you a link to set a new password.",
+    "sendResetLink": "Send Reset Link",
+    "resetLinkSent": "Check your email — the reset link has been sent.",
+    "backToLogin": "Back to Sign In"
+}

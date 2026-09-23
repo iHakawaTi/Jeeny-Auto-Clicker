@@ -1,0 +1,90 @@
+# =============================================================
+# Miscellaneous
+# =============================================================
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# =============================================================
+# IntelliJ / Android Studio
+# =============================================================
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# =============================================================
+# VS Code
+# =============================================================
+.vscode/
+
+# =============================================================
+# Flutter / Dart / Pub
+# =============================================================
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication + Obfuscation
+app.*.symbols
+app.*.map.json
+
+# =============================================================
+# Android build outputs
+# =============================================================
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/.gradle/
+/android/captures/
+/android/local.properties
+/android/**/GeneratedPluginRegistrant.*
+/android/key.properties
+*.keystore
+*.jks
+
+# =============================================================
+# SECRETS — NEVER COMMIT
+# =============================================================
+.env
+.env.local
+.env.*.local
+*.env.local
+secrets.json
+service-account*.json
+supabase.env
+
+# =============================================================
+# Legal / IP protection: reverse-engineering artifacts
+# The SmartCaptain APK + decompiled Kotlin/Dart snapshots were
+# used only as internal reference during click-strategy R&D.
+# Never commit — they're a third party's copyrighted work.
+# =============================================================
+smartcaptain*.apk
+smartcaptain_ext/
+decompiled/
+*.dex
+*.smali
+
+# =============================================================
+# Local dev scratch
+# =============================================================
+Gemini_Generated_Image_*
+jeeny-mock.html
+*.local.sql
+scratchpad/
+tmp/

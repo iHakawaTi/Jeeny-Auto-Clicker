@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Matches SmartCaptain's exact accessibility service config:
+      - packageNames filters at the system level to Jeeny driver app only.
+        Android drops events from other packages before they reach us,
+        which is essential for reliably catching short-lived popups.
+      - accessibilityFlags = flagDefault | flagReportViewIds | flagRetrieveInteractiveWindows
+        (matches SmartCaptain's 0x51 = 81 exactly)
+      - flagIncludeNotImportantViews added as insurance against apps that
+        mark their Accept buttons as unimportant for accessibility.
+      - com.android.chrome retained in packageNames so the HTML test mock
+        still works for verification.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeWindowsChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault|flagReportViewIds|flagRetrieveInteractiveWindows|flagIncludeNotImportantViews"
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+    android:packageNames="me.com.easytaxista,com.android.chrome"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="100" />
