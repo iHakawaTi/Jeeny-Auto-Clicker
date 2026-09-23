@@ -120,37 +120,41 @@ The signed release APK is attached to the [latest GitHub Release](../../releases
 ## Project structure
 
 ```
-android/                         Native Android (Kotlin)
-  app/src/main/kotlin/com/example/keemo/
-    MainActivity.kt              Method channel bridge and permission intents
-    JeenyAccessibilityService.kt Screen scanning, matching, click cascade,
-                                 floating bubble overlay, foreground service
-
-lib/                             Flutter (Dart)
-  main.dart                      App entry and AuthGate routing
-  core/
-    config/env.dart              Reads --dart-define values at build time
-    constants/app_colors.dart
-    services/
-      supabase_service.dart      All Supabase calls and RPCs
-      native_bridge.dart         MethodChannel wrappers
-      localization_service.dart  Locale persistence
-    utils/device_info_util.dart  ANDROID_ID resolver
-    widgets/language_toggle_button.dart
-  features/
-    auth/                        Login, Register, Forgot Password
-    dashboard/                   Driver Dashboard, widgets, drawer
-    admin/                       Admin Dashboard (Drivers, Overview, Settings)
-    permissions/                 Permissions guide and OEM accessibility sheet
-    subscription/                Inactive and trial expired screen
-  l10n/                          ARB files (en, ar) and generated bindings
-
-supabase_schema.sql              Full DDL: tables, RLS, triggers, RPCs
-supabase_debug.sql               Ad hoc inspection queries
-supabase_seed_test_drivers.sql   Test fixture drivers
-INSTALL_EN.md, INSTALL_AR.md     Driver facing sideload guides
-.env.example                     Credentials template
-pubspec.yaml
+.
+├── android/                                Native Android (Kotlin)
+│   └── app/src/main/kotlin/com/example/keemo/
+│       ├── MainActivity.kt                 Method channel bridge, permission intents
+│       └── JeenyAccessibilityService.kt    Screen scanning, matching, click cascade,
+│                                           floating bubble overlay, foreground service
+│
+├── lib/                                    Flutter (Dart)
+│   ├── main.dart                           App entry, AuthGate routing
+│   ├── core/
+│   │   ├── config/
+│   │   │   └── env.dart                    Reads --dart-define values at build time
+│   │   ├── constants/app_colors.dart
+│   │   ├── services/
+│   │   │   ├── supabase_service.dart       All Supabase calls and RPCs
+│   │   │   ├── native_bridge.dart          MethodChannel wrappers
+│   │   │   └── localization_service.dart   Locale persistence
+│   │   ├── utils/
+│   │   │   └── device_info_util.dart       ANDROID_ID resolver
+│   │   └── widgets/
+│   │       └── language_toggle_button.dart
+│   ├── features/
+│   │   ├── auth/                           Login, Register, Forgot Password
+│   │   ├── dashboard/                      Driver Dashboard, widgets, drawer
+│   │   ├── admin/                          Admin Dashboard (Drivers, Overview, Settings)
+│   │   ├── permissions/                    Permissions guide, OEM accessibility sheet
+│   │   └── subscription/                   Inactive and trial expired screen
+│   └── l10n/                               ARB files (en, ar), generated bindings
+│
+├── supabase_schema.sql                     Full DDL: tables, RLS, triggers, RPCs
+├── supabase_debug.sql                      Ad hoc inspection queries
+├── supabase_seed_test_drivers.sql          Test fixture drivers
+├── INSTALL_EN.md, INSTALL_AR.md            Driver facing sideload guides
+├── .env.example                            Credentials template
+└── pubspec.yaml
 ```
 
 ## How auto-accept works internally
