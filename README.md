@@ -177,16 +177,6 @@ The signed release APK is attached to the [latest GitHub Release](../../releases
 
 </details>
 
-## Security and privacy
-
-* No hard coded credentials. Supabase URL and anon key come from `--dart-define-from-file=.env`. The `.env` file is git ignored.
-* Row Level Security is enabled on every table. Drivers can only see their own row. Admins can see all. Anonymous callers get nothing.
-* All admin RPCs check `public.is_admin()` server side before doing anything. The client cannot spoof its way past.
-* Every `SECURITY DEFINER` function sets `search_path = public` to block search path hijacking attacks.
-* Device binding is one way: an account is locked to the `Settings.Secure.ANDROID_ID` of the phone it was created on. An admin can reset it via `reset_user_device_binding`.
-* Accessibility scope is narrow. The service only receives events from Jeeny's driver package (system level filter in the XML config). It cannot read your bank app, WhatsApp messages, or anything else.
-* No telemetry, no analytics, no third party trackers. The only outbound network calls are to your own Supabase project and to WhatsApp or OEM settings pages via `Intent`.
-
 ## License
 
 Released under the [MIT License](LICENSE). Please re read the legal and religious disclaimers above before deploying to real drivers.
